@@ -1,0 +1,212 @@
+
+body {
+    margin: 0;
+    background-color: rgb(232, 229, 229);
+    font-family:  "kh Battambang", sans-serif;
+}
+
+*::selection {
+    color: black;
+    background-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    background-color: rgb(194, 194, 194);
+    height: 100px;
+    border-top: 15px solid #04AA6D;
+}
+#header > #block-header {
+    width: 1100px;
+    height: 100%;
+    /* background-color: rgb(240, 148, 10); */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header > #block-header img {
+    height: 90%;
+    float: left;
+}
+#header > #block-header h2 {
+    font-family:  Bayon,Arial;
+    font-size: xx-large;
+    transition: all 0.4s linear;
+}
+#header > #block-header nav {
+
+}
+#header > #block-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+
+}
+#header > #block-header nav ul li {
+    display: inline;
+    font-size: 18px;
+    margin-left: 10px;
+}
+#header > #block-header nav ul li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 13px;
+    color: #333;
+    transition: all linear 0.3s;
+}
+#header > #block-header nav ul li a:hover {
+    background-color: #111;
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+#header > #block-header nav ul li a i {
+    width: 20px;
+}
+#menu-bar {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#menu-bar ul li {
+    float: left;
+}
+#menu-bar ul li a {
+    display: block;
+    padding: 10px 14px;
+    color: #fff;
+    text-decoration: none;
+}
+#menu-bar ul li a.active {
+    background-color: #04AA6D;
+}
+#menu-bar ul li a:hover:not(.active) {
+    background-color: #111;
+    box-shadow: 3px 3px 4px black;
+}
+form {
+    width: 450px;
+    float: right;
+}
+input[type="text"] {
+    width: 165px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(../images/searchicon.png);
+    background-repeat: no-repeat;
+    padding: 5px 50px 5px 40px;
+    background-position: 10px 10px;
+    font-family: "kh Battambang", sans-serif;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+}
+input[type="text"]:focus {
+    border: 3px solid rgb(49, 129, 250);
+    width: 100%;
+}
+
+#container{
+    width: 1100px;
+    /* height: 200vh; */
+    height: auto;
+    /* background-color: rgb(240, 148, 10); */
+    margin: 15px auto;
+}
+#container > .container-head {
+    clear: left;
+    background-color:#333;
+    color: #fff;
+    padding: 10px 10px;
+    height: 45px;
+}
+#container > .container-head h2 {
+    margin: 0;
+    font-family: Bayon, sans-serif;
+    font-weight: normal;
+    font-size:x-large;
+    float: left;
+}
+#container > .container-head a{
+    font-weight: normal;
+    float: right;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 45px;
+}
+#container > .container-head a:hover {
+    text-decoration-line: underline;
+    line-height: 45px;
+
+}
+.three-column {
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    /* height: 450px; */
+    height: auto;
+    /* background-color: #04AA6D; */
+    background: linear-gradient(177deg, rgba(60,53,37,1) 0%, rgba(0,0,0,1) 100%);
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+    margin-bottom: 25px;
+}
+.three-column img {
+    display: block;
+    height: 280px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.three-column > .title-singer {
+    width: 274px;
+    /* background-color: rgb(172, 164, 164); */
+    margin: 15px auto;
+    color: #fff;
+}
+.three-column > .title-singer h3 {
+    margin: 0;
+    text-transform: capitalize;
+}
+.three-column > .title-singer h3::after {
+    content: " - ច្រៀងដោយ";
+}
+.three-column > .title-singer h4 {
+    margin: 0;
+}
+.three-column > .play-music {
+}
+.three-column > .play-music audio {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 0px 0px 10px 0px;
+}
+
+/* Footer */
+#footer {
+    clear: both;
+    background-color: #333;
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+}
